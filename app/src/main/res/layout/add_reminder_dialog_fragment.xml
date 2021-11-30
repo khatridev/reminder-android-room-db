@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/card_enlarged_border"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.AddReminderActivity">
+
+
+    <EditText
+        android:id="@+id/editReminderText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:hint="add a reminder"
+        android:inputType="textPersonName"
+        android:textColor="#FFF"
+        android:textColorHint="#9898" />
+
+    <Button
+        android:id="@+id/btnReminderSave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Save"
+        android:layout_marginTop="300dp"
+        android:textColor="#FFF" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <RadioButton
+            android:id="@+id/rbTime"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+            android:outlineSpotShadowColor="@color/colorPrimaryDark"
+            android:text="Time"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/rbPlace"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="640dp"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+            android:outlineSpotShadowColor="@color/colorPrimaryDark"
+            android:text="Place"
+            android:textColor="#FFF" />
+
+    </RadioGroup>
+
+    <include
+        android:id="@+id/includeReminderType"
+        layout="@layout/time_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"/>
+
+
+</RelativeLayout>

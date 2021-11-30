@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <TextView
+        android:id="@+id/tv_On"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="On"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/et_date_selection"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/et_date_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="center|start"
+        android:inputType="date"
+        android:text="this date"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_At"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="At"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/et_time_selection"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_On" />
+
+    <TextView
+        android:id="@+id/et_time_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="center|start"
+
+        android:inputType="textPersonName"
+        android:text="this time"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_date_selection" />
+</androidx.constraintlayout.widget.ConstraintLayout>
